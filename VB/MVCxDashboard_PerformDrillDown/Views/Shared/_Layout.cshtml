@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>@ViewBag.Title</title>
+    <script src="@Url.Content("~/Scripts/DrillDown.js")" type="text/javascript"></script>
+
+    @Html.DevExpress().GetStyleSheets( 
+        new StyleSheet { ExtensionSuite = ExtensionSuite.Dashboard }
+    )
+    @Html.DevExpress().GetScripts( 
+        new Script { ExtensionSuite = ExtensionSuite.Dashboard }
+    )
+    
+</head>
+
+<body>
+    @RenderBody()
+</body>
+</html>

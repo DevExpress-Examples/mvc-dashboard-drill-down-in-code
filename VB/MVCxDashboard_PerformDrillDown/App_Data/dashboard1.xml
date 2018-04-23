@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="DataSource1">
+      <Name>SalesPerson</Name>
+      <Connection Name="nwindConnection" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="SalesPerson">
+        <Tables>
+          <Table Name="SalesPerson" />
+        </Tables>
+        <Columns>
+          <AllColumns Table="SalesPerson" />
+        </Columns>
+      </Query>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" ShowCaption="false" DataSource="DataSource1" DataMember="SalesPerson">
+      <InteractivityOptions IsDrillDownEnabled="true" />
+      <DataItems>
+        <Dimension DataMember="CategoryName" DefaultId="DataItem0" />
+        <Dimension DataMember="ProductName" DefaultId="DataItem1" />
+        <Measure DataMember="Extended Price" DefaultId="DataItem2" />
+        <Measure DataMember="Quantity" DefaultId="DataItem3" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem1" />
+        </GridDimensionColumn>
+        <GridMeasureColumn>
+          <Measure DefaultId="DataItem2" />
+        </GridMeasureColumn>
+        <GridMeasureColumn>
+          <Measure DefaultId="DataItem3" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
