@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/MVCxDashboard_PerformDrillDown/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/MVCxDashboard_PerformDrillDown/Controllers/HomeController.vb))
+* [Global.asax.cs](./CS/MVCxDashboard_PerformDrillDown/Global.asax.cs) (VB: [Global.asax.vb](./VB/MVCxDashboard_PerformDrillDown/Global.asax.vb))
+* [DrillDown.js](./CS/MVCxDashboard_PerformDrillDown/Scripts/DrillDown.js) (VB: [DrillDown.js](./VB/MVCxDashboard_PerformDrillDown/Scripts/DrillDown.js))
+* [Index.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Home/Index.cshtml)
+* [_Layout.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Shared/_Layout.cshtml)
+<!-- default file list end -->
 # ASP.NET MVC Dashboard - How to perform a drill-down in code
 
 
