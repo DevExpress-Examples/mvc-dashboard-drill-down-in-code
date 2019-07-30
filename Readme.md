@@ -9,7 +9,7 @@
 <!-- default file list end -->
 # ASP.NET MVC Dashboard - How to perform a drill-down in code
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t496083)**
+**[[Run Online]](https://codecentral.devexpress.com/t496083/)**
 <!-- run online end -->
 
 
