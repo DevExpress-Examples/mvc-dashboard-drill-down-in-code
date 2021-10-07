@@ -18,6 +18,7 @@
         @Html.DevExpress().Dashboard(settings =>
            {
                settings.Name = "webDashboard";
+               settings.ControllerName = "DefaultDashboard";
                settings.WorkingMode = DevExpress.DashboardWeb.WorkingMode.Viewer;
                settings.Width = Unit.Percentage(100);
                settings.Height = Unit.Percentage(100);

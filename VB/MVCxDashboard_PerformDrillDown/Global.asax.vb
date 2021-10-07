@@ -11,7 +11,7 @@ Namespace MVCxDashboard_PerformDrillDown
         Public Shared Sub RegisterRoutes(ByVal routes As RouteCollection)
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}")
             routes.IgnoreRoute("{resource}.ashx/{*pathInfo}")
-            routes.MapDashboardRoute()
+            routes.MapDashboardRoute("dashboardControl", "DefaultDashboard")
 
             routes.MapRoute("Default", "{controller}/{action}/{id}", New With {Key .controller = "Home", Key .action = "Index", Key .id = UrlParameter.Optional})
         End Sub
