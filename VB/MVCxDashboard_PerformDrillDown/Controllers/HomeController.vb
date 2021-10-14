@@ -1,6 +1,7 @@
-﻿Imports System.Web.Mvc
+Imports System.Web.Mvc
 
 Namespace MVCxDashboard_PerformDrillDown.Controllers
+
     Public Class HomeController
         Inherits Controller
 

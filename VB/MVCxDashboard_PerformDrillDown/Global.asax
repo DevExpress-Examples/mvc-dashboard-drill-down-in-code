@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="MVCxDashboard_PerformDrillDown.MvcApplication" Language="vb" %>
+<%@ Application Codebehind="Global.asax.cs" Inherits="MVCxDashboard_PerformDrillDown.MvcApplication" Language="C#" %>

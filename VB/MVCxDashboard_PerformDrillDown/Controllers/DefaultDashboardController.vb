@@ -1,6 +1,7 @@
-﻿Imports DevExpress.DashboardWeb.Mvc
+Imports DevExpress.DashboardWeb.Mvc
 
 Namespace MVCxDashboard_PerformDrillDown.Controllers
+
     Public Class DefaultDashboardController
         Inherits DashboardController
 
