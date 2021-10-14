@@ -9,7 +9,12 @@
 **[[Run Online]](https://codecentral.devexpress.com/t496083/)**
 <!-- run online end -->
 
-The following example demonstrates how to perform a drill-down in the <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument16977">ASP.NET MVC Dashboard Extension</a> on the client side.
+The following example demonstrates how to perform a drill-down in the [ASP.NET MVC Dashboard Extension](https://docs.devexpress.com/Dashboard/16977/web-dashboard/aspnet-mvc-dashboard-extension) on the client side.
+
+In this example, the [ASPxClientDashboard.PerformDrillDown](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_performdrilldown_itemname_value_) method is used to perform a drill-down for a specified row in a [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) dashboard item. The [dxSelectBox](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxSelectBox/) widget contains categories for which a drill-down can be performed. These categories are obtained using the [ASPxClientDashboard.GetAvailableDrillDownValues](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_getavailabledrilldownvalues_itemname_) method. Select a required category and click the **Perform Drill-Down** button to perform a drill-down by the selected category.
+When the Grid displays a list of products (the bottom-most detail level), you can only perform a drill-up action that returns you to the top detail level. The [ASPxClientDashboard.PerformDrillUp](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_performdrillup_itemname_) method is called to do this.
+
+
 <!-- default file list -->
 ## Files to Look At:
 
@@ -19,8 +24,6 @@ The following example demonstrates how to perform a drill-down in the <a href="h
 * [Index.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Home/Index.cshtml)
 * [\_Layout.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Shared/_Layout.cshtml)
 <!-- default file list end -->
-In this example, the [ASPxClientDashboard.PerformDrillDown](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_performdrilldown_itemname_value_) method is used to perform a drill-down for a specified row in a [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) dashboard item. The [dxSelectBox](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxSelectBox/) widget contains categories for which a drill-down can be performed. These categories are obtained using the [ASPxClientDashboard.GetAvailableDrillDownValues](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_getavailabledrilldownvalues_itemname_) method. Select a required category and click the **Perform Drill-Down** button to perform a drill-down by the selected category.
-When the Grid displays a list of products (the bottom-most detail level), you can only perform a drill-up action that returns you to the top detail level. The [ASPxClientDashboard.PerformDrillUp](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_performdrillup_itemname_) method is called to do this.
 
 ## Documentation
 
