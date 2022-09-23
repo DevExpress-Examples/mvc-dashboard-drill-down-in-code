@@ -23,7 +23,7 @@ When the Grid displays a list of products (the bottom-most detail level), you ca
 
 * [DrillDown.js](./CS/MVCxDashboard_PerformDrillDown/Scripts/DrillDown.js) (VB: [DrillDown.js](./VB/MVCxDashboard_PerformDrillDownVb/Scripts/DrillDown.js))
 * [Index.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Home/Index.cshtml) (VB: [Index.vbhtml](./VB/MVCxDashboard_PerformDrillDownVb/Views/Home/Index.cshtml))
-* [_Layout.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Shared/_Layout.cshtml) (VB: [_Layout.vbhtml](./VB/MVCxDashboard_PerformDrillDownVb/Views/Shared/_Layout.cshtml))
+* [_rootLayout.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Shared/_rootLayout.cshtml) (VB: [_rootLayout.vbhtml](./VB/MVCxDashboard_PerformDrillDownVb/Views/Shared/_rootLayout.vbhtml))
 
 ## Documentation
 
