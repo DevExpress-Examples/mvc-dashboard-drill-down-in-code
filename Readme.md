@@ -4,28 +4,32 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-## Dashboard for MVC - How to Perform a Drill-Down in Code
+# Dashboard for Web Forms - How to perform a drill-down in code
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/128579144/)**
 <!-- run online end -->
 
-The following example demonstrates how to perform a drill-down in the [ASP.NET MVC Dashboard Extension](https://docs.devexpress.com/Dashboard/16977/web-dashboard/aspnet-mvc-dashboard-extension) on the client side.
+The following example shows how to drill down in the Web Dashboard control on the client side.
 
-In this example, the [ASPxClientDashboard.PerformDrillDown](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_performdrilldown_itemname_value_) method is used to perform a drill-down for a specified row in a [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) dashboard item. The [dxSelectBox](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxSelectBox/) widget contains categories for which a drill-down can be performed. These categories are obtained using the [ASPxClientDashboard.GetAvailableDrillDownValues](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_getavailabledrilldownvalues_itemname_) method. Select a required category and click the **Perform Drill-Down** button to perform a drill-down by the selected category.
-When the Grid displays a list of products (the bottom-most detail level), you can only perform a drill-up action that returns you to the top detail level. The [ASPxClientDashboard.PerformDrillUp](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_performdrillup_itemname_) method is called to do this.
+The example contains a [dxSelectBox](https://js.devexpress.com/DevExtreme/ApiReference/UI_Components/dxSelectBox/Configuration/) UI component, a [Grid](https://docs.devexpress.com/Dashboard/117161/web-dashboard/create-dashboards-on-the-web/dashboard-item-settings/grid) dashboard item, and a button.
 
+The [ViewerApiExtension.getAvailableDrillDownValues](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension?p=netframework#js_devexpress_dashboard_viewerapiextension_getavailabledrilldownvalues_itemname_) method call obtains the categories available for drill-down in the Grid item. The `dxSelectBox` uses these categories as a data source. When you select the category in the select box and click the **Drill Down** button, the [ViewerApiExtension.performDrillDown](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension?p=netframework#js_devexpress_dashboard_viewerapiextension_performdrilldown_itemname_value_) method call drills down in the specified row in the Grid item.
 
-<!-- default file list -->
-## Files to Look At:
+![](web-dashboard-drill-down-in-code-example.png)
 
-* [HomeController.cs](./CS/MVCxDashboard_PerformDrillDown/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/MVCxDashboard_PerformDrillDown/Controllers/HomeController.vb))
-* [Global.asax.cs](./CS/MVCxDashboard_PerformDrillDown/Global.asax.cs) (VB: [Global.asax.vb](./VB/MVCxDashboard_PerformDrillDown/Global.asax.vb))
-* [DrillDown.js](./CS/MVCxDashboard_PerformDrillDown/Scripts/DrillDown.js) (VB: [DrillDown.js](./VB/MVCxDashboard_PerformDrillDown/Scripts/DrillDown.js))
-* [Index.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Home/Index.cshtml)
-* [\_Layout.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Shared/_Layout.cshtml)
-<!-- default file list end -->
+When the Grid displays a list of products (the bottom-most detail level), you can only drill up, and the Drill Down button is changed to **Drill Up**. When you click the **Drill Up** button, the [ViewerApiExtension.performDrillUp](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension#js_devexpress_dashboard_viewerapiextension_performdrillup_itemname_) method is called. This action returns you to the top detail level (a list of categories). The [ViewerApiExtension.canPerformDrillDown](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension#js_devexpress_dashboard_viewerapiextension_canperformdrilldown_itemname_) and [ViewerApiExtension.canPerformDrillUp](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension#js_devexpress_dashboard_viewerapiextension_canperformdrillup_itemname_) method calls check whether the Drill-Down or Drill-Up are available.
+
+## Files to Review
+
+* [DrillDown.js](./CS/MVCxDashboard_PerformDrillDown/Scripts/DrillDown.js) (VB: [DrillDown.js](./VB/MVCxDashboard_PerformDrillDownVb/Scripts/DrillDown.js))
+* [Index.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Home/Index.cshtml) (VB: [Index.vbhtml](./VB/MVCxDashboard_PerformDrillDownVb/Views/Home/Index.cshtml))
+* [_Layout.cshtml](./CS/MVCxDashboard_PerformDrillDown/Views/Shared/_Layout.cshtml) (VB: [_Layout.vbhtml](./VB/MVCxDashboard_PerformDrillDownVb/Views/Shared/_Layout.cshtml))
 
 ## Documentation
 
-* [Drill-Down](https://docs.devexpress.com/Dashboard/116913/common-features/interactivity/drill-down?p=netframework)
-* [Web Dashboard - Drill-Down](https://docs.devexpress.com/Dashboard/117061/web-dashboard/create-dashboards-on-the-web/interactivity/drill-down)
+- [Drill-Down](https://docs.devexpress.com/Dashboard/117061/web-dashboard/create-dashboards-on-the-web/interactivity/drill-down)
+
+## More Examples
+
+- [Dashboard for Web Forms - How to perform a drill-down in code](https://github.com/DevExpress-Examples/asp-net-web-forms-dashboard-perform-drill-down-in-code)
+- [Dashboard for Web Forms - How to update the parameter value when the item's master filter state is changed](https://github.com/DevExpress-Examples/how-to-update-the-parameter-value-when-the-items-master-filter-state-is-changed-t575012)

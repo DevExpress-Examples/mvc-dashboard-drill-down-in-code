@@ -1,30 +1,13 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿<div id="selectBox" style="float: left;"></div>
+<div id="buttonContainer" style="float: left; margin-left: 150px;"></div>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div id="selectBox" style="float: left;"></div>
-    <div id="buttonContainer" style="float: left; margin-left: 150px;"></div>
-    <div style="position: absolute; left: 0; right: 0; top:50px; bottom:0;">
-        @Html.DevExpress().Dashboard(settings =>
-           {
-               settings.Name = "webDashboard";
-               settings.ControllerName = "DefaultDashboard";
-               settings.WorkingMode = DevExpress.DashboardWeb.WorkingMode.Viewer;
-               settings.Width = Unit.Percentage(100);
-               settings.Height = Unit.Percentage(100);
-               settings.ClientSideEvents.DashboardEndUpdate = "function() { initializeControls(); }";
-               settings.ClientSideEvents.ActionAvailabilityChanged = "function() { setState(); }";
-           }).GetHtml()
-    </div>
-</body>
-</html>
+<div style="position: absolute; left: 0; right: 0; top:50px; bottom:0;">
+    @Html.DevExpress().Dashboard(settings => {
+        settings.Name = "Dashboard";
+        settings.ControllerName = "DefaultDashboard";
+        settings.Width = Unit.Percentage(100);
+        settings.Height = Unit.Percentage(100);
+        settings.WorkingMode = DevExpress.DashboardWeb.WorkingMode.Viewer;
+        settings.ClientSideEvents.BeforeRender = "onBeforeRender";
+    }).GetHtml()
+</div>

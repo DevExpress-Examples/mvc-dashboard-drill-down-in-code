@@ -1,7 +1,6 @@
-﻿using DevExpress.DashboardWeb.Mvc;
+﻿﻿using DevExpress.DashboardWeb.Mvc;
 
-namespace MVCxDashboard_PerformDrillDown.Controllers
-{
+namespace MVCxDashboard_PerformDrillDown.Controllers {
     public class DefaultDashboardController : DashboardController {
 
     }
