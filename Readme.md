@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Dashboard for Web Forms - How to perform a drill-down in code
+# Dashboard for MVC - How to perform a drill-down in code
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/128579144/)**
 <!-- run online end -->
