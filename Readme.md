@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Dashboard for MVC - How to Drill Down on the Client
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128579144/)**
-<!-- run online end -->
 
 The following example shows how to drill down in the Web Dashboard control on the client side.
 
